@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.emojione.EmojiOneView?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="Anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.InAgriController">
+   <children>
+      <HBox alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="900.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="570.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <image>
+                  <Image url="@../Images/Logo.jpg" />
+               </image>
+            </ImageView>
+            <Label alignment="TOP_RIGHT" contentDisplay="CENTER" prefHeight="30.0" prefWidth="29.0" text="VLT" textAlignment="CENTER" textFill="#003333">
+               <HBox.margin>
+                  <Insets right="740.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="8.0" />
+               </padding>
+            </Label>
+            <FontAwesomeIconView fx:id="Minimize" fill="#003333" glyphName="MINUS" onMouseClicked="#Minimize" size="15">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </FontAwesomeIconView>
+            <FontAwesomeIconView fx:id="Restore" fill="#003333" glyphName="WINDOW_RESTORE" onMouseClicked="#Restore" size="15">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </FontAwesomeIconView>
+            <FontAwesomeIconView fx:id="Close" fill="#003333" glyphName="CLOSE" layoutX="10.0" layoutY="20.0" onMouseClicked="#Close" size="15">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </FontAwesomeIconView>
+         </children>
+      </HBox>
+      <HBox layoutY="42.0" prefHeight="62.0" prefWidth="900.0" AnchorPane.bottomAnchor="490.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+         <children>
+            <Button fx:id="btnAccueil" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-color: #003333; -fx-border-radius: 6px;" text="Accueil" textFill="#006666">
+               <graphic>
+                  <FontAwesomeIconView fill="#006666" glyphName="HOME" />
+               </graphic>
+               <font>
+                  <Font name="Calibri Bold" size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnVache" alignment="CENTER" contentDisplay="TOP" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-color: #003333; -fx-border-radius: 6px;" text="Vache" textFill="#006666">
+               <font>
+                  <Font name="Calibri Bold" size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <graphic>
+                  <EmojiOneView fill="#006666" glyphName="COW2" />
+               </graphic>
+            </Button>
+            <Button fx:id="btnAjouter" alignment="CENTER" contentDisplay="TOP" layoutX="744.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-color: #003333; -fx-border-radius: 6px;" text="Ajouter" textFill="#006666">
+               <graphic>
+                  <FontAwesomeIconView fill="#006666" glyphName="PLUS_SQUARE_ALT" />
+               </graphic>
+               <font>
+                  <Font name="Calibri Bold" size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnDosMed" alignment="CENTER" contentDisplay="TOP" layoutX="341.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-color: #003333; -fx-border-radius: 6px;" text="Dossier Médical" textFill="#006666">
+               <graphic>
+                  <FontAwesomeIconView fill="#006666" glyphName="HEARTBEAT" />
+               </graphic>
+               <font>
+                  <Font name="Calibri Bold" size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnStat" alignment="CENTER" contentDisplay="TOP" layoutX="244.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-color: #003333; -fx-border-radius: 6px;" text="Statistiques" textFill="#006666">
+               <graphic>
+                  <FontAwesomeIconView fill="#006666" glyphName="BAR_CHART" />
+               </graphic>
+               <font>
+                  <Font name="Calibri Bold" size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnNotif" alignment="CENTER" contentDisplay="TOP" layoutX="62.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-color: #003333; -fx-border-radius: 6px;" text="Notifications" textFill="#006666">
+               <graphic>
+                  <FontAwesomeIconView fill="#006666" glyphName="BELL" />
+               </graphic>
+               <font>
+                  <Font name="Calibri Bold" size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnSettings" alignment="CENTER" contentDisplay="TOP" layoutX="114.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-color: #003333; -fx-border-radius: 6px;" text="Paramètres" textFill="#006666">
+               <graphic>
+                  <FontAwesomeIconView fill="#006666" glyphName="GEARS" />
+               </graphic>
+               <font>
+                  <Font name="Calibri Bold" size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Button>
+         </children></HBox>
+      <AnchorPane layoutY="122.0" prefHeight="458.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="110.0" />
+   </children>
+</AnchorPane>

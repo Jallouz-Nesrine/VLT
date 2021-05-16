@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #003333;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vltt.LOGINController">
+   <children>
+      <HBox alignment="CENTER_RIGHT" layoutY="-1.0" prefHeight="10.0" prefWidth="703.0">
+         <children>
+            <FontAwesomeIconView fx:id="Close" fill="#bfc7cd" glyphName="CLOSE" onMouseClicked="#Close" size="16" />
+         </children>
+         <padding>
+            <Insets bottom="11.0" left="11.0" right="11.0" top="11.0" />
+         </padding>
+      </HBox>
+      <ImageView fitHeight="334.0" fitWidth="333.0" layoutX="19.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/LogoSoc.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="365.0" layoutY="49.0" prefHeight="334.0" prefWidth="311.0" style="-fx-background-color: #006666;">
+         <children>
+            <FontAwesomeIconView fill="#003333" glyphName="USER" layoutX="131.0" layoutY="75.0" size="60" />
+            <Label layoutX="62.0" layoutY="102.0" text="Connectez vous à votre espace !" textFill="#bfc7cd">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="EmailTel" focusColor="#ddc1d4" layoutX="75.0" layoutY="142.0" onAction="#EmailNum" prefHeight="30.0" prefWidth="176.0" promptText="Email / Numéro de téléphone" style="-fx-background-color: tranparent;" unFocusColor="#bfc7cd">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="mdp" focusColor="#ddc1d4" layoutX="76.0" layoutY="191.0" onAction="#MDP" prefHeight="26.0" prefWidth="176.0" promptText="Mot de passe" style="-fx-background-color: transparent;" unFocusColor="#bfc7cd">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </JFXPasswordField>
+            <FontAwesomeIconView fill="#bfc7cd" glyphName="LOCK" layoutX="55.0" layoutY="215.0" size="18" />
+            <JFXButton fx:id="bntSECONNECTER" layoutX="110.0" layoutY="250.0" onAction="#SeConnecter" style="-fx-background-color: #088585;" text="SE CONNECTER" textFill="#bfc7cd" />
+            <Hyperlink layoutX="96.0" layoutY="297.0" text="Mot de passe oublié?" textFill="#bfc7cd">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Hyperlink>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

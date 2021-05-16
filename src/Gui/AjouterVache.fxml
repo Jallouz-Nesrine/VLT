@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="458.0" prefWidth="900.0" stylesheets="@Style.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/15.0.1" fx:controller="Controllers.AjouterVacheController">
+   <children>
+      <HBox layoutX="50.0" layoutY="-10.0" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="420.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label prefHeight="38.0" prefWidth="398.0" text="    Ajouter une vache à votre base de donnée:" textFill="#006666">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <AnchorPane layoutX="259.0" layoutY="81.0">
+         <children>
+            <Label text="Numéro" textFill="WHITE">
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+               <font>
+                  <Font name="Calibri Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField id="TextField" fx:id="Num" alignment="CENTER" layoutX="132.0" layoutY="2.0" prefHeight="27.0" prefWidth="226.0" />
+            <Label layoutY="37.0" text="Race" textFill="WHITE">
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+               <font>
+                  <Font name="Calibri Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Age" alignment="CENTER" layoutX="132.0" layoutY="78.0" prefHeight="27.0" prefWidth="226.0" />
+            <Label layoutY="76.0" text="Age" textFill="WHITE">
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+               <font>
+                  <Font name="Calibri Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Race" alignment="CENTER" layoutX="132.0" layoutY="40.0" prefHeight="27.0" prefWidth="226.0" />
+            <Label layoutY="114.0" text="Sexe" textFill="WHITE">
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+               <font>
+                  <Font name="Calibri Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutY="151.0" text="Vaccin" textFill="WHITE">
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+               <font>
+                  <Font name="Calibri Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Dossier" alignment="CENTER" layoutX="132.0" layoutY="193.0" prefHeight="27.0" prefWidth="226.0" />
+            <Label layoutY="191.0" text="Dossier Médical" textFill="WHITE">
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+               <font>
+                  <Font name="Calibri Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Vaccin" alignment="CENTER" layoutX="132.0" layoutY="154.0" prefHeight="27.0" prefWidth="226.0" />
+            <HBox layoutX="132.0" layoutY="112.0" prefHeight="30.0" prefWidth="226.0">
+               <children>
+                  <CheckBox fx:id="Male" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Mâle" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Calibri Bold" size="13.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="Femelle" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Femelle" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Calibri Bold" size="13.0" />
+                     </font>
+                  </CheckBox>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <Button fx:id="btnReset" layoutX="334.0" layoutY="386.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-color: #003333; -fx-border-radius: 20px;" text="Effacer Tout" textFill="#003333">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="#a24b4b" glyphName="TRASH" />
+         </graphic>
+      </Button>
+      <Button fx:id="btnEnregistrer" layoutX="467.0" layoutY="386.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-color: #003333; -fx-border-radius: 20px;" text="Enregistrer" textFill="#003333">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="#005180" glyphName="SAVE" />
+         </graphic>
+      </Button>
+      <Label layoutX="340.0" layoutY="320.0" prefHeight="38.0" prefWidth="217.0" text="Il faut remplir tous les champs.">
+         <graphic>
+            <FontAwesomeIconView fill="RED" glyphName="EXCLAMATION_TRIANGLE" size="20" />
+         </graphic>
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

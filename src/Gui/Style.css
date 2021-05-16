@@ -1,0 +1,13 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 13 mai 2021, 22:51:22
+    Author     : Nesrine
+*/
+
+#AnchorPane{
+    -fx-background-color: linear-gradient(to right bottom,#bfc7cd,#9BECB4);
+}
